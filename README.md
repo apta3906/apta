@@ -1,2 +1,0 @@
-# apta
-TUGAS 2

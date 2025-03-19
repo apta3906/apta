@@ -1,0 +1,37 @@
+class Mahasiswa:
+    def __init__(self, nama, nim, jurusan):
+        self.__nama = nama  # Private property
+        self.__nim = nim    # Private property
+        self.jurusan = jurusan  # Public property
+
+    # Getter untuk nama
+    def get_nama(self):
+        return self.__nama
+
+    # Setter untuk nama
+    def set_nama(self, nama_baru):
+        self.__nama = nama_baru
+
+    # Getter untuk NIM
+    def get_nim(self):
+        return self.__nim
+
+    # Setter untuk NIM
+    def set_nim(self, nim_baru):
+        self.__nim = nim_baru
+
+
+# Membuat objek dari class Mahasiswa
+mhs1 = Mahasiswa("Budi", "123456", "Informatika")
+
+# Mengakses properti private menggunakan getter
+print("Nama sebelum diubah:", mhs1.get_nama())
+print("NIM sebelum diubah:", mhs1.get_nim())
+
+# Mengubah properti private menggunakan setter
+mhs1.set_nama("Andi")
+mhs1.set_nim("654321")
+
+# Menampilkan data setelah diubah
+print("Nama setelah diubah:", mhs1.get_nama())
+print("Nama setelah diubah:"<mhs1.get_nim())
